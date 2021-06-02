@@ -59,7 +59,7 @@ const AdminLogin = () => {
                 <Form.Item
                     label="Email"
                     name="email"
-                    rules={[{ required: true, message: 'Please input your email!' }]}
+                    rules={[{ required: true, message: 'Hãy nhập email!' }]}
                 >
                     <Input name="email" value={moderator.email} onChange={onChange}/>
                 </Form.Item>
@@ -67,7 +67,7 @@ const AdminLogin = () => {
                 <Form.Item
                     label="Password"
                     name="password"
-                    rules={[{ required: true, message: 'Please input your password!' }]}
+                    rules={[{ required: true, message: 'Hãy nhập mật khẩu !' }]}
                 >
                     <Input.Password name="password" value={moderator.password} onChange={onChange}/>
                 </Form.Item>

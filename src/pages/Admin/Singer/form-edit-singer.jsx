@@ -84,7 +84,7 @@ const FormEdit = ({ isShowModal, setIsShowModal, indexOfRecord, data, token }) =
     //     return (
     //         <Select
     //             mode="tags"
-    //             placeholder="Inserted are removed"
+    //             placeholder=""
     //             //value={categoryValue}
     //             // value={inputDefaultValue.category}
     //             onChange={handleChange}
@@ -113,7 +113,7 @@ const FormEdit = ({ isShowModal, setIsShowModal, indexOfRecord, data, token }) =
     //     return (
     //         <Select
     //             mode="tags"
-    //             placeholder="Inserted are removed"
+    //             placeholder=""
     //             value={singersValue}
     //             onChange={handleChange}
     //             style={{ width: '100%' }}
@@ -140,7 +140,7 @@ const FormEdit = ({ isShowModal, setIsShowModal, indexOfRecord, data, token }) =
     //     return (
     //         <Select
     //             mode="tags"
-    //             placeholder="Inserted are removed"
+    //             placeholder=""
     //             value={songsValue}
     //             onChange={handleChange}
     //             style={{ width: '100%' }}
@@ -208,7 +208,7 @@ const FormEdit = ({ isShowModal, setIsShowModal, indexOfRecord, data, token }) =
             <Form.Item
                 label="Name"
                 name="name"
-                rules={[{ required: true, message: 'Please input singer\'s name!' }]}
+                rules={[{ required: true, message: 'Hãy nhập tên ca sĩ!' }]}
             >
                 <Input value={!isEmpty(singerInfo) ? singerInfo.name : ""} name="name" onChange={getName} />
             </Form.Item>
@@ -224,7 +224,7 @@ const FormEdit = ({ isShowModal, setIsShowModal, indexOfRecord, data, token }) =
             <Form.Item
                 label="Age"
                 name="age"
-                rules={[{ required: true, message: 'Please input singer\'s age!' }]}
+                rules={[{ required: true, message: 'Hãy nhập tuổi của ca sĩ!' }]}
             >
                 <Input value={!isEmpty(singerInfo) ? singerInfo.age : ""} name="age" onChange={getAge} />
             </Form.Item>

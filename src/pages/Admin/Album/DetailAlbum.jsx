@@ -97,7 +97,7 @@ const DetailAlbum = ({ moderatorToken }) => {
         return (
             <Select
                 mode="tags"
-                placeholder="Inserted are removed"
+                placeholder=""
                 onChange={handleChange}
                 style={{ width: '100%' }}
                 value={location.state.album.category}
@@ -127,7 +127,7 @@ const DetailAlbum = ({ moderatorToken }) => {
         return (
             <Select
                 mode="tags"
-                placeholder="Inserted are removed"
+                placeholder=""
                 value={location.state.album.singer}
                 onChange={handleChange}
                 style={{ width: '100%' }}
@@ -157,7 +157,7 @@ const DetailAlbum = ({ moderatorToken }) => {
         return (
             <Select
                 mode="tags"
-                placeholder="Inserted are removed"
+                placeholder=""
                 value={location.state.album.song}
                 onChange={handleChange}
                 style={{ width: '100%' }}
@@ -223,7 +223,7 @@ const DetailAlbum = ({ moderatorToken }) => {
             <Form.Item
                 label="Name"
                 name="name"
-                rules={[{ required: true, message: 'Please input album\'s name!' }]}
+                rules={[{ required: true, message: 'Hãy nhập tên album\'s !' }]}
             >
                 <Input
                     name="albumName"
@@ -236,7 +236,7 @@ const DetailAlbum = ({ moderatorToken }) => {
             <Form.Item
                 label="Category"
                 name="category"
-                rules={[{ required: true, message: 'Please input category\'s name!' }]}
+                rules={[{ required: true, message: 'Hãy nhập thể loại Album\'s!' }]}
             >
                 {category()}
             </Form.Item>
@@ -244,7 +244,7 @@ const DetailAlbum = ({ moderatorToken }) => {
             <Form.Item
                 label="Singers"
                 name="singers"
-                rules={[{ required: true, message: 'Please input singer\'s name!' }]}
+                rules={[{ required: true, message: 'Hãy nhập tên ca sĩ!' }]}
             >
                 {singers()}
             </Form.Item>
@@ -252,7 +252,7 @@ const DetailAlbum = ({ moderatorToken }) => {
             <Form.Item
                 label="Songs"
                 name="songs"
-                rules={[{ required: true, message: 'Please input song\'s name!' }]}
+                rules={[{ required: true, message: 'Hãy nhập tên các bài hát!' }]}
             >
                 {songs()}
             </Form.Item>

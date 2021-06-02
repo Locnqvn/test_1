@@ -5,7 +5,7 @@ import { EditOutlined , DeleteOutlined} from "@ant-design/icons"
 const ListUser = () => {
     const columns = [
         {
-            title: 'Name',
+            title: 'Tên',
             dataIndex: 'name',
             key: 'name',
             sorter: {
@@ -24,7 +24,7 @@ const ListUser = () => {
             },
         },
         {
-            title: 'IsVip',
+            title: 'Thành viên vip',
             dataIndex: 'isVip',
             key: 'isVip',
             filters: [
@@ -34,7 +34,7 @@ const ListUser = () => {
             onFilter: (value, record) => record.isVip.includes(value)
         },
         {
-            title: 'CreatedAt',
+            title: 'Ngày tạo',
             dataIndex: 'createdAt',
             key: 'createAt',
             sorter: {
@@ -43,7 +43,7 @@ const ListUser = () => {
             },
         },
         {
-            title: 'ModifiedAt',
+            title: 'Ngày cập nhập',
             dataIndex: 'modifiedAt',
             key: 'modifiedAt',
             sorter: {

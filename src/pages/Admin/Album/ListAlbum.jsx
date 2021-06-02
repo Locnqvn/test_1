@@ -171,7 +171,7 @@ const ListAlbum = ({ moderatorToken }) => {
         <Table columns={columns} dataSource={data.dataDisplay} />
         <Modal
             width={1000}
-            title="Add Album"
+            title="Tạo mới album"
             visible={isShowModal}
             onOk={handleOk}
             onCancel={handleCancel}

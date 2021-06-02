@@ -31,7 +31,7 @@ class SelectWithHiddenSelectedOptions extends React.Component {
       <Select
         allowClear
         labelInValue
-        placeholder="Inserted are removed"
+        placeholder=""
         value={selectedItems}
         filterOption={false}
         onChange={this.handleChange}

@@ -52,7 +52,7 @@ const FormCreate = ({ token }) => {
     return (
       <Select
         mode="tags"
-        placeholder="Inserted are removed"
+        placeholder=""
         //value={categoryValue}
         // value={}
         onChange={handleChangeCategory}
@@ -81,7 +81,7 @@ const FormCreate = ({ token }) => {
     return (
       <Select
         mode="tags"
-        placeholder="Inserted are removed"
+        placeholder=""
         value={singersValue}
         onChange={handleChangeSinger}
         style={{ width: '100%' }}
@@ -108,7 +108,7 @@ const FormCreate = ({ token }) => {
     return (
       <Select
         mode="tags"
-        placeholder="Inserted are removed"
+        placeholder=""
         value={songsValue}
         onChange={handleChangeSong}
         style={{ width: '100%' }}
@@ -186,40 +186,40 @@ const FormCreate = ({ token }) => {
       onFinishFailed={onFinishFailed}
     >
       <Form.Item
-        label="Name"
+        label="Tên Album"
         name="name"
-        rules={[{ required: true, message: 'Please input album\'s name!' }]}
+        rules={[{ required: true, message: 'Hãy nhập trên Album\'s!' }]}
       >
         <Input onChange={getName}/>
       </Form.Item>
 
       <Form.Item
-        label="Category"
+        label="Thể loại"
         name="category"
-        rules={[{ required: true, message: 'Please input category\'s name!' }]}
+        rules={[{ required: true, message: 'Hãy nhập thể loại Album\'s!' }]}
       >
         {category()}
       </Form.Item>
 
       <Form.Item
-        label="Singers"
+        label="Ca sĩ"
         name="singers"
-        rules={[{ required: true, message: 'Please input singer\'s name!' }]}
+        rules={[{ required: true, message: 'Hãy nhập tên ca sĩ!' }]}
       >
         {singers()}
       </Form.Item>
 
       <Form.Item
-        label="Songs"
+        label="Bài hát"
         name="songs"
-        rules={[{ required: true, message: 'Please input song\'s name!' }]}
+        rules={[{ required: true, message: 'Hãy nhập tên các bài hát!' }]}
       >
         {songs()}
       </Form.Item>
 
 
       <Form.Item
-        label="Description"
+        label="Mô tả"
         name="description"
         rules={[{ required: false }]}
       >
@@ -227,7 +227,7 @@ const FormCreate = ({ token }) => {
       </Form.Item>
 
       <Form.Item
-        label="Avatar"
+        label="Ảnh bìa"
         name="avatar"
         rules={[{ required: false }]}
       >
@@ -237,7 +237,7 @@ const FormCreate = ({ token }) => {
 
       <Form.Item {...tailLayout}>
         <Button type="primary" htmlType="submit">
-          Submit
+          Gửi
         </Button>
       </Form.Item>
     </Form>

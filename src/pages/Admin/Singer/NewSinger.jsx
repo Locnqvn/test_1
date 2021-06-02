@@ -67,16 +67,17 @@ const Demo = ({moderatorToken}) => {
       name="basic"
       initialValues={{ remember: true }}
     >
+      <h1 style={{ fontSize: '30px' }}>Thêm ca sĩ</h1>
       <Form.Item
-        label="Name"
+        label="Tên ca sĩ"
         name="name"
-        rules={[{ required: true, message: 'Please input singer\'s name!' }]}
+        rules={[{ required: true, message: 'Hãy nhập tên ca sĩ!' }]}
       >
         <Input value={singer.name} name="name" onChange={onchange}/>
       </Form.Item>
 
       <Form.Item
-        label="Gender"
+        label="Giới tính"
         name="gender"
         rules={[{ required:false}]}
       >
@@ -84,9 +85,9 @@ const Demo = ({moderatorToken}) => {
       </Form.Item>
 
       <Form.Item
-        label="Age"
+        label="Tuổi"
         name="age"
-        rules={[{ required:true , message:'Plese enter your age'}]}
+        rules={[{ required:true , message:'Hãy nhập tuổi !'}]}
         
       >
          <Input value={singer.age} name="age" onChange={onchange}/>
@@ -94,7 +95,7 @@ const Demo = ({moderatorToken}) => {
 
 
       <Form.Item
-        label="Avatar"
+        label="Ảnh đại diện"
         name="avatar"
         rules={[{ required: false}]}
       >
@@ -103,7 +104,7 @@ const Demo = ({moderatorToken}) => {
 
       <Form.Item {...tailLayout}>
         <Button type="primary" htmlType="submit" onClick={onSubmit}>
-          Submit
+          Gửi
         </Button>
       </Form.Item>
     </Form>
