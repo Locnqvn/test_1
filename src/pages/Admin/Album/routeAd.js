@@ -2,7 +2,7 @@ import {lazy} from "react";
 
 export default [
     {
-        path: "/admin/albums",
+        path: "/",
         exact: true,
         component: lazy(() => import("./ListAlbum"))
     },

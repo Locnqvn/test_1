@@ -43,7 +43,7 @@ const AdminLogin = () => {
         }else{
             setCookie("moderatorToken", data.result.accessToken, {path: '/'});
             setCookie("moderator", {name: data.result.name}, {path: '/'});
-            history.push('/admin/albums');
+            history.push('/');
         }
     }
 

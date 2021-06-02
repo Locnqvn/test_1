@@ -33,7 +33,7 @@ const DashBoard = ({children, onLogout}) => {
                 <div className="logoAd"><img src='/icons/spotify.png' alt="nhacvn" style = {{paddingRight: '12px'}}></img>MySpotify</div>
                 <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                     <Menu.Item key="1" icon={<BarsOutlined />}>
-                        <Link to="/admin/albums">Album</Link>
+                        <Link to="/">Album</Link>
                     </Menu.Item>
                     <Menu.Item key="2" icon={<CustomerServiceOutlined />}>
                         <Link to="/admin/songs">Bài hát</Link>
