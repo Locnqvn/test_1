@@ -1,0 +1,117 @@
+.infor-music{
+    padding: 20px;
+    p{
+        color: gray;
+    }
+}
+
+.card-music{
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+    margin: 5px 0px;
+    border-radius: 4px;
+    background-image: url('https://www.xmple.com/wallpaper/blue-linear-gradient-black-1920x1080-c2-00bfff-000000-a-345-f-14.svg');
+    .cover-image{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border: 1px solid yellowgreen;
+        border-radius: 5px;
+        top: 40px;
+        left: 40px;
+        overflow: hidden;
+        .img{
+            width: 100%;
+        }
+    }
+
+    .cus-controls{
+        width: 580px;
+        position: absolute;
+        top: 72%;
+        left: 35%;
+        span{
+            color: rgb(122, 119, 119);
+        }
+
+        .c-played{
+            margin-right: 5px;
+        }
+        .c-progress{
+            position: absolute;
+            top: 4px;
+            width: 87%;
+            
+        }
+        .c-duration{
+            float: right;
+        }
+
+    }
+
+    .btn-controls{
+        width: 270px;
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        ul{
+            text-decoration-style: none;
+            display: inline;
+            padding: 0px;
+            li{
+                margin-left: 20px;
+                display: inline;
+                color: honeydew;
+                font-size: 30px;
+                font-weight: thin;
+            }
+            .playing{
+                font-size: 33px;
+                color: rgb(24, 214, 205);
+            }
+            li:hover{
+                cursor: pointer;
+                color: indigo;
+            }
+
+            .c-on{
+                color: honeydew;
+            }
+            .c-off{
+                color: rgb(75, 72, 72);
+            }
+        }
+    }
+
+    .c-volume{
+        width: 90px;
+        position: absolute;
+        top: 80%;
+        left: 35%;
+        display: inline-flex;
+        padding-top: 10px;
+        input{
+            width: 100%;
+        }
+        span{
+            font-size: 22px;
+            display: inline;
+            margin-right: 3px;
+        }
+        .vol-on{
+            color: white;
+        }
+        .vol-off{
+            color: rgb(68, 66, 66);
+        }
+        .input-off{
+            display: none;
+        }
+
+        .input-on{
+            display: block;
+        }
+    }
+}

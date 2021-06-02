@@ -1,0 +1,62 @@
+Carousel {
+    z-index: 9;
+}
+
+.content-side{
+    background-color: #182434;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.new-release-music{
+    
+    .new-music-list{
+        width: 100%;
+        padding-left: 0px;
+        display: inline-flex;
+        .new-music-card{
+            width: 48%;
+            border-bottom: 0.5px solid #5a5858;
+            padding: 10px 0px;
+            margin: 0px 10px;
+            div{
+                float: right;
+                margin-right: 34%;
+                padding-top: 10px;
+
+                p{
+                    color: rgb(110, 108, 108);
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+    
+}
+
+a{cursor: pointer;}
+
+.title-music-video ul li{
+    display: inline;
+}
+
+.partner-slide{
+    padding: 5px;
+}
+.playlist{
+    .playlist-slider-item{
+        margin-left: 20px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+.top-content-slide{
+    margin: 20px 0px;
+}
+
+
+
+
+

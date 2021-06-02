@@ -1,0 +1,48 @@
+.content-side{
+    padding-bottom: 20px;
+}
+
+.album-content{
+
+    .wrapper-list-album{
+
+        width: 100%;
+        display: inherit;
+
+        div.list-album{
+            
+            .cardAlbum{
+                width: 25%;
+                height: 280px;
+
+                padding: 10px 8px;
+                display: inline-block;
+                overflow: hidden;
+    
+                img{
+                    width: 100%;
+                    overflow: hidden;
+                }
+            
+                .card-content{
+                    width: 100%;
+                    padding: 3px;
+                    margin: 0px;
+                    p{
+                        width: 100%;
+                        margin-top: 3px;
+                        color: white;
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+.pagination{
+    margin-left: 36%;
+}

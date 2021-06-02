@@ -1,0 +1,44 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #ffffff;
+    .ant-table-thead th.ant-table-column-has-sorters {
+      background-color: #00ffff26;
+    }
+    .ant-table-filter-column{
+      background-color: #00ffff26;
+    }
+    .ant-table-thead > tr > th{
+      background-color:  #00ffff26;
+    }
+  }
+  
+  .ant-layout-sider .ant-layout-sider-children{
+    background-color: #353535;
+    }
+    .ant-menu-dark.ant-menu-inline .ant-menu-item, .ant-menu-dark.ant-menu-inline .ant-menu-submenu-title{
+      background-color: #353535;
+    }
+    .ant-menu.ant-menu-dark{
+      background-color: #353535;
+    }
+    .ant-layout-sider-trigger{
+      background-color: #47494c;
+    }
+
+  .logoAd{
+    padding: 10px 20px;
+    border-bottom: 1px solid #212da787;
+    color: white;
+  }
+
+  .ant-layout-footer{
+    background-color: white;
+  }
+  .ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content{
+    background-color: white;
+  }

@@ -1,0 +1,19 @@
+.box-actions{
+    padding: 5px;
+    float: right;
+    ul{
+        padding: 0px;
+        text-decoration-style: none;
+        display: inline;
+        color: rgb(172, 166, 166);
+        li{
+            display: inline-flex;
+            margin: 0px 15px;
+            font-size: 20px;
+        }
+        li:hover{
+            cursor: pointer;
+            color: rgb(55, 233, 114);
+        }
+    }
+}

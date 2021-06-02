@@ -1,0 +1,69 @@
+
+
+.music-video-content{
+    .wrapper-list-video{
+        width: 100%;
+
+        div.list-video{
+            padding-left: 0px;
+            display: inherit;
+            .cardVideo{
+                width: 25%;
+                padding: 10px 8px;
+                display: inline-block;
+                overflow: hidden;
+                position: relative;
+                border-radius: 5px;
+                .image-card{
+                    overflow: hidden;
+                    height: 180px;
+
+                }
+                img{
+                border-radius: 5px;
+                    width: 100%;
+                }
+            
+                p{
+                    margin-bottom: 0px;
+                }
+                p.nameSong{
+                    color: white;
+                    
+                }
+                p.nameSinger{
+                    color: rgb(102, 97, 97);
+                }
+                .durationVideo{
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    background-color: rgb(117, 114, 114);
+                    span{
+                        color: rgb(214, 205, 205);
+                    }
+                }
+                .on-hover-video{
+                    position: absolute;
+                    top: 38%;
+                    left: 43%;
+                    color: white;
+                    font-size: 30px;
+                    display: none;
+                }
+            }
+            .cardVideo:hover{
+                opacity: 0.5;
+                .on-hover-video{
+                    opacity: 1;
+                    display: block;
+                }
+                .on-hover-video:hover{
+                    cursor: pointer;
+                }
+                
+            }
+    }
+}
+    
+}

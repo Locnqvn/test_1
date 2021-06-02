@@ -1,0 +1,77 @@
+
+.footer-top{
+    clear: both;
+}
+
+.info{
+    float: left;
+}
+
+.musics{
+    float: left;
+    margin-left: 40px;
+}
+
+.rank{
+    float: left;
+    margin-left: 40px;
+}
+.connect-us{
+    float: left;
+    margin-left: 40px;
+}
+.download-app{
+    float: left;
+    margin-left: 40px;
+}
+    .download-app #download-option{
+        display: flex;
+    }
+
+        .download-app #download-option div{
+            padding : 5px;
+            margin-top: 5px;
+        }
+.association{
+    float: left;
+    clear: right;
+    margin-left: 40px;
+}
+
+.footer-bottom{
+    margin-top: 200px;
+}
+.icon-nhacvn-bot{
+    width: 10%;
+}
+.note-message{
+    width: 65%;
+    float: left;
+}
+.notified{
+    width: 10%;
+}
+.dmca{
+    width: 10%;
+}
+
+.android{
+    background-color: rgb(18, 189, 95);
+    border-radius: 6px;
+}
+.ios {
+    background-color: rgb(19, 189, 95);
+    border-radius: 6px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.color-white{
+    color: white
+}
+
+.color-wheat{
+    color:wheat
+}

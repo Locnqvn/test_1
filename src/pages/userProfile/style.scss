@@ -1,0 +1,205 @@
+a{
+    cursor: pointer;
+}
+
+.content-side{
+    .brand-side{
+        position: relative;
+
+        #brand-img{
+            width: 100%;
+            opacity: 0.3;
+            
+        }
+
+        .profile-side{
+            position: absolute;
+            display: flex;
+            
+            right: 40%;
+            top: 58%;
+            #ava{
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .profile-info{
+                
+                align-items: center;
+                strong{
+                    margin-top: 30px;
+                }
+
+                .two-button{
+                    display: block;
+                }
+            }
+        }
+    }
+}       
+
+
+.main-content-side{
+    .topic{
+        margin: auto;
+        text-align: center;
+
+
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        a{
+            display: flex;
+            margin-left: 60%;
+
+            h3{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .list-likely-music{
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+
+            .item{
+                display: flex;
+                justify-content: space-between;
+
+                .music-name{
+                    width: 73%;
+
+                    p{
+                        text-align: left;
+                    }
+
+                    h3{
+                        text-align: left;
+                    }
+                }
+                
+                a{
+                    width: 10%;
+                    padding-right: 20px;
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                div{
+                    align-items: center;
+                }
+
+                ul{
+                    display: flex;
+                    right: 10px;
+                    align-items: center;
+                   // margin-left: 50%;
+                  
+                }
+                ul li{
+                    
+                    display: inline;
+                }
+
+                .show-all{
+                    width:100%;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+
+    .my-playlist{
+        .my-playlist-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            #title{
+                text-align: left;
+            }
+            
+        }
+
+        .list-playlist{
+            .flex{
+                display: flex;
+                img{
+                    width: 70px;
+                }
+
+                p{
+                    margin: auto;
+                    margin-left: 20px;
+                }
+
+                .auto{
+                    margin: auto;
+                    
+                }
+            }
+            
+            ul{
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .liked-artist{
+        .title{
+            display: flex;
+            justify-content: baseline;
+        }
+        .list-liked-artist{
+            ul{
+                display: flex;
+                padding-left: 0px;
+                flex-wrap: wrap;
+                li{
+                    width: 20%;
+
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .liked-music-type{
+        h1{
+            text-align: left;  
+        }
+        .list-music-type{
+            ul{
+                display: flex;
+                padding-left: 0px;
+                flex-wrap: wrap;
+                li{
+                    padding-bottom: 10px;
+                    text-align: left;
+                    width: 33.33%;
+                }
+            }
+        }
+    }
+}
+
+.color-white{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-wheat{
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ant-btn{
+    background-color: rgb(25, 156, 123);
+}

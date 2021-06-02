@@ -1,0 +1,116 @@
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.header{
+    background-color: #21324a;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    .wrapper{
+        width: 1170px;
+        margin: auto;
+        .header-top{
+            padding: 10px;
+            display: -webkit-flex;
+            border-bottom: 1px solid rgb(29, 28, 28);
+            .logo{
+                float: left;
+                margin-right: 10%;
+            }
+
+            .search-side{
+                .search{
+                    width: 442px;
+                    padding: 3px;
+
+                }
+            }
+
+            ul{
+                display: inline-flex;
+            }
+
+            .align14{
+                margin-top: 7px;
+            }
+            .search-option{
+                ul li a{
+                    padding: 0 22px;
+                    color: white;
+                    font-size: 16px;
+                }
+
+            }
+
+            .sign-in-up{
+                ul li a{
+                    padding: 0 4px;
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+            ul li a:hover{
+                color: #3a77c7;
+            }
+
+
+        }
+        .header-menu{
+            padding: 12px 0px;
+            margin-left: -5%;
+            .nav{
+                ul{
+                    display: flex;
+                }
+                ul li{
+                    display: inline-flex;
+                    padding: 0 25px;
+                    a{
+                        color: #829799;
+                    }
+                    border-bottom: 2px solid #21324a;
+                }  
+                ul li:hover{
+                    border-bottom: 2px solid green;
+                }      
+            }
+        }
+    }
+}
+
+.sub-menu{
+    background-color: white;
+    padding: 10px;
+    margin-top: 8px;
+    ul{
+        margin-left: -20px;
+    }
+    ul li{
+        padding: 5px 15px;
+    }
+    a{
+        color: black;
+
+    }
+    a:hover{
+        color: rgb(24, 155, 24);
+    }
+    .sub-title{
+        font-weight: 600;
+    }
+}
+
+
+
+@media screen and (max-width: 792px){
+
+}
+
+@media screen and (max-width: 360px){
+
+}
+
+
+
