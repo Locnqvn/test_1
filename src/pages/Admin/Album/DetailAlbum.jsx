@@ -63,7 +63,7 @@ const DetailAlbum = ({ moderatorToken }) => {
         }
         setTimeout(() => {
             history.push({
-                pathname: "/admin/albums"
+                pathname: "/"
             })
         }, 1000);
 
@@ -211,7 +211,7 @@ const DetailAlbum = ({ moderatorToken }) => {
 
         <Button onClick={() => {
             history.push({
-                pathname: "/admin/albums"
+                pathname: "/"
             })
         }}>Back</Button>
         <Form
