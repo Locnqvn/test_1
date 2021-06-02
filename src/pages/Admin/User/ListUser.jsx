@@ -113,7 +113,7 @@ const ListUser = () => {
         }
     ];
     return (<div>
-        <h1>this is User component</h1>
+        <h1>Danh sách người dùng</h1>
         <Table columns={columns} dataSource={data} />
     </div>);
 }
