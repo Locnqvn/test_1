@@ -7,11 +7,11 @@ export default function MainLayout({children, user, logout}){
 
     return (
         <div>
-            <HeaderX user={user} logout={(e) => logout(e)}/>
+            <div user={user} logout={(e) => logout(e)}/>
                 {
                     children
                 }
-            <FooterX/>
+            <div/>
         </div>
     )
 }
