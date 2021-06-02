@@ -145,9 +145,9 @@ const ListSinger = ({moderatorToken}) => {
         }
     }
     return ( <div>
-        <h1>ListSinger</h1>
+        <h1>Danh sách ca sĩ</h1>
         <div className='right-pos'> 
-          <Button type="primary" href='/admin/singers/new'>Create Singer</Button>
+          <Button type="primary" href='/admin/singers/new'> Thêm ca sĩ</Button>
         </div>
         
         <Table columns={columns} dataSource={singer} pagination={configPagination} onChange={handleTableChange} />
