@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import { Form, Input, Button, Checkbox, notification } from 'antd';
 import {useCookies} from 'react-cookie';
 import moderatorAPI from '../../../api/moderator';
+import './style.scss';
 
 
 const layout = {
@@ -49,7 +50,7 @@ const AdminLogin = () => {
 
     return (
         <div style={styleAdminLoginForm} className="admin-login-form">
-            <h3 style={{textAlign: "center"}}>ADMIN</h3>
+            <h3 style={{textAlign: "center"}}>ADMIN LOGIN</h3>
             <Form
                 {...layout}
                 name="basic"
@@ -57,6 +58,7 @@ const AdminLogin = () => {
                 onFinishFailed={onFinishFailed}
             >
                 <Form.Item
+                    className="form-group"
                     label="Email"
                     name="email"
                     rules={[{ required: true, message: 'Please input your email!' }]}
@@ -65,16 +67,17 @@ const AdminLogin = () => {
                 </Form.Item>
 
                 <Form.Item
+                    className="form-group"
                     label="Password"
                     name="password"
                     rules={[{ required: true, message: 'Please input your password!' }]}
                 >
                     <Input.Password name="password" value={moderator.password} onChange={onChange}/>
                 </Form.Item>
-                <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
+                <Form.Item {...tailLayout} className="LoginBtn">
+                    <Button htmlType="submit" className="btn">
                         Đăng nhập
-        </Button>
+                    </Button>
                 </Form.Item>
             </Form>
         </div>);
