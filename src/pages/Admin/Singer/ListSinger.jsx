@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Tag, Space,Image, AutoComplete, Pagination,notification } from 'antd';
 import { Button } from 'antd';
+import { useHistory } from 'react-router';
 import singerAPI from '../../../api/singer';
 import Confirmation from './ModalConfirmDelete';
 import FormEdit from './form-edit-singer';
@@ -10,7 +11,7 @@ import './style.scss';
 
 
 const ListSinger = ({moderatorToken}) => {
-
+    const history = useHistory();
     const [singer, setSinger] = useState([]);
     const [paging, setPaging] = useState({current: 1, pageSize: 5, total: 100, defaultCurrent: 1});
     const [filters, setFilters] = useState();
@@ -144,10 +145,14 @@ const ListSinger = ({moderatorToken}) => {
             }
         }
     }
+    const onNewSinger = (e) => {
+        e.preventDefault();
+        history.push('/admin/singers/new');
+    }
     return ( <div>
         <h1>Danh sách ca sĩ</h1>
         <div className='right-pos'> 
-          <Button type="primary" href='/admin/singers/new'> Thêm ca sĩ</Button>
+          <Button type="primary" onClick = {onNewSinger}> Thêm ca sĩ</Button>
         </div>
         
         <Table columns={columns} dataSource={singer} pagination={configPagination} onChange={handleTableChange} />

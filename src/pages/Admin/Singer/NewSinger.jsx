@@ -1,4 +1,4 @@
-import { Form, Input, Button, Checkbox, Select } from 'antd';
+import { Form, Input, Button, Checkbox, Select, notification } from 'antd';
 // import { Select } from 'antd';
 // import SelectGender from '../../Helper/SelectGender';
 // import Avatar from '../../Helper/Upload-image-preview';
@@ -50,7 +50,14 @@ const Demo = ({moderatorToken}) => {
         // dataF.append("singers",song.singers)
 
         let {data} = await singerAPI.createSinger(dataF, moderatorToken);
-        console.log("result song new: ", data);
+        // console.log("result song new: ", data);
+        console.log()
+        if(data.status === 1){
+            notification.success({message: "Thêm ca sĩ thành công!"})
+        }
+        else{
+            notification.error({message: "Có lỗi xảy ra, xin thử lại sau! \n" + data.message});
+        }
         
     }
 
