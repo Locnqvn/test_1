@@ -6,6 +6,7 @@ import FormEdit from './form-edit-album';
 import Confirmation from './ModalConfirmDelete';
 import album from '../../../api/album';
 import { Redirect, Link } from 'react-router-dom'
+import { EditOutlined , DeleteOutlined} from "@ant-design/icons"
 import './style.scss';
 const ListAlbum = ({ moderatorToken }) => {
     const [isShowModal, setIsShowModal] = useState(false);
@@ -114,10 +115,12 @@ const ListAlbum = ({ moderatorToken }) => {
                                     album: record,
                                 }
                             }} >
-                                Edit
+                                <EditOutlined />
                             </Link>
                         </Button>
-                        <Button onClick={() => handleDeleteClick(index, record)}>Delete</Button>
+                        <Button style = {{borderColor:'#ff4d4f',background: '#ff4d4f'}} onClick={() => handleDeleteClick(index, record)}>
+                            <DeleteOutlined />
+                        </Button>
                     </Space>
                 )
             },

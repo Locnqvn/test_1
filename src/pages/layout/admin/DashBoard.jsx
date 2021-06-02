@@ -30,7 +30,7 @@ const DashBoard = ({children, onLogout}) => {
     return (
         <Layout style={{ minHeight: '100vh' }}>
             <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
-                <div className="logoAd"><img src='/icons/spotify.png' alt="nhacvn"></img>  MySpotify</div>
+                <div className="logoAd"><img src='/icons/spotify.png' alt="nhacvn" style = {{paddingRight: '12px'}}></img>MySpotify</div>
                 <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                     <Menu.Item key="1" icon={<BarsOutlined />}>
                         <Link to="/admin/albums">Album</Link>

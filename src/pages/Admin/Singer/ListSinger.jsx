@@ -5,7 +5,7 @@ import singerAPI from '../../../api/singer';
 import Confirmation from './ModalConfirmDelete';
 import FormEdit from './form-edit-singer';
 import { EditOutlined , DeleteOutlined} from "@ant-design/icons"
-// import './style.css';
+import './style.scss';
 
 
 
@@ -82,7 +82,7 @@ const ListSinger = ({moderatorToken}) => {
                         <Button onClick={() => handleEditClick(index, record)}> 
                             <EditOutlined /> 
                         </Button>
-                        <Button onClick={() => handleDeleteClick(index, record)}> 
+                        <Button style = {{borderColor:'#ff4d4f',background: '#ff4d4f'}} onClick={() => handleDeleteClick(index, record)}> 
                             <DeleteOutlined />
                         </Button>
                     </Space>

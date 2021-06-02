@@ -3,9 +3,10 @@ import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Table, Tag, Space, Button, notification, Modal, Select } from 'antd';
 import songAPI from '../../../api/song';
-
+import { EditOutlined , DeleteOutlined} from "@ant-design/icons"
 import './style.scss';
 import ModalDelete from './ModalDelete';
+
 
 const inititalSong = {
   _id: null,
@@ -151,8 +152,8 @@ const ListSong = ({ moderatorToken }) => {
         return (
           <Space size="middle">
             <Button type="danger" onClick={() => handleDeleteClick(index, record)}>
-              Xóa
-          </Button>
+              <DeleteOutlined />
+            </Button>
           </Space>
 
         )
